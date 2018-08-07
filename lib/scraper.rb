@@ -23,6 +23,7 @@ class Scraper
       course.title = course_xml.css("h2").text
       course.schedule = course_xml.css("class").text
       course.description = course_xml.css("p").text
+      course
     end
   end
 
