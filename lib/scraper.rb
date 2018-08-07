@@ -26,7 +26,7 @@ class Scraper
       course
     end
    Course.all.each do |instance|
-      puts "#{instance.name} - #{instance.schedule} - #{instance.description}"
+      puts "#{instance.title} - #{instance.schedule} - #{instance.description}"
     end
   end
 
