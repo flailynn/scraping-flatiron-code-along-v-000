@@ -25,6 +25,7 @@ class Scraper
       course.description = course_xml.css("p").text
       course
     end
+    puts Course.all
   end
 
     def print_courses
