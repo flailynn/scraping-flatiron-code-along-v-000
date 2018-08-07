@@ -25,7 +25,9 @@ class Scraper
       course.description = course_xml.css("p").text
       course
     end
-    puts Course.all
+   Course.all.each do |instance|
+      puts "#{instance.name} - #{instance.schedule} - #{instance.description}"
+    end
   end
 
     def print_courses
